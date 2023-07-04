@@ -1,0 +1,26 @@
+name: Python Workflow
+
+on:
+  push:
+    branches:
+      - main  # 替换为您要触发工作流程的分支
+
+jobs:
+  run-python:
+    name: Run Python Script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10  # 替换为您要使用的Python版本
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # 如果有依赖，请提供requirements.txt文件路径
+
+      - name: Run Python script
+        run: python your_script.py  # 替换为您要运行的Python脚本文件路径
