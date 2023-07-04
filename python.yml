@@ -23,4 +23,4 @@ jobs:
         run: pip install -r requirements.txt  # 如果有依赖，请提供requirements.txt文件路径
 
       - name: Run Python script
-        run: python your_script.py  # 替换为您要运行的Python脚本文件路径
+        run: announce.py  # 替换为您要运行的Python脚本文件路径
