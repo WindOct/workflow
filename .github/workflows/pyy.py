@@ -2,6 +2,7 @@ import requests
 from lxml import etree
 import json
 from datetime import datetime
+from urllib.parse import urljoin
 baseurl='http://www.jwc.sjtu.edu.cn/'
 url='http://www.jwc.sjtu.edu.cn/index/mxxsdtz.htm'
 headers={'User-agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
