@@ -10,7 +10,6 @@ res=requests.get(url,headers=headers)
 e=etree.HTML(res.content.decode("UTF-8"))
 text=[]
 link=[]
-
 #创建初始json
 # with open('rec.json','r') as file:
 #    text=json.load(file)
