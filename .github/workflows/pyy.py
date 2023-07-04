@@ -42,7 +42,7 @@ if news!=text[0]:
         date3.append(date)
         for ele in l:
             ele_url=ele.get('href')
-            ele_url=urljoin(baseurl,ele_url)
+            #ele_url=urljoin(baseurl,ele_url)
             link.append(ele_url)
     sorted_dates = sorted(enumerate(date3), key=lambda x: datetime.strptime(x[1], '%Y.%m.%d'),reverse=True)
     sorted_indices = [index for index, _ in sorted_dates]
